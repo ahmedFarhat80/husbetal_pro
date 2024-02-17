@@ -29,7 +29,7 @@
                         </x-nav-link>
                     @else
                         <x-nav-link href="{{ route('Section') }}" :active="request()->routeIs('Section')">
-                            {{ __('Time') }}
+                            {{ __('Add working hours') }}
                         </x-nav-link>
                     @endif
 
