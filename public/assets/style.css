@@ -1,0 +1,526 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #e75c3c;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.vertical-tabs .nav-link {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    text-align: right;
+    padding: 10px 15px;
+    color: #333;
+}
+
+.vertical-tabs .nav-link.active {
+    border-left: 3px solid #e75c3c;
+    border-right: 3px solid #e75c3c;
+    border-bottom: none !important;
+    background-color: #f8f9fa !important;
+    color: #e75c3c;
+    font-weight: bold;
+}
+
+.tab-content {
+    text-align: right;
+    padding: 20px;
+}
+
+.search-box {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    /* border: #e75c3c solid 1px; */
+    border: none;
+    padding: 10px;
+    flex: 1;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fce9e9;
+}
+
+.search-box button {
+    background-color: #e75c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #e75c3c;
+    color: white;
+}
+
+.doctors-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.doctors-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.doctors-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.doctor-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    color: #333;
+    text-decoration: none;
+}
+
+.doctor-option:hover {
+    background-color: #e9ecef;
+}
+
+.doctor-name {
+    flex: 1;
+}
+
+.doctor-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.selected-doctor {
+    background-color: #e75c3c !important;
+    color: white !important;
+}
+
+.selected-doctor .doctor-icon {
+    background-color: #e75c3c !important;
+
+}
+
+.date-time-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.time-slot {
+    background-color: #e75c3c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.time-slot:hover {
+    background-color: #54350a;
+}
+
+.selected-time-slot {
+    background-color: #54350a !important;
+    color: white !important;
+    font-weight: bold;
+    border: 2px solid #e75c3c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.date-time-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    /* حجم الخط في حقل التاريخ */
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.time-slot {
+    background-color: #e75c3c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    /* حجم الخط في الأوقات */
+}
+
+.time-slot:hover {
+    background-color: #54350a;
+}
+
+.selected-time-slot {
+    background-color: #54350a !important;
+    color: white !important;
+    font-weight: bold;
+    border: 2px solid #54350a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* تحسينات لنموذج بيانات المريض */
+.patient-info-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.patient-info-section h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.patient-info-section .form-group {
+    margin-bottom: 15px;
+}
+
+.patient-info-section label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.patient-info-section .form-control {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.patient-info-section select.form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 25px;
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-512.png') no-repeat right center;
+    background-size: 20px;
+}
+
+.patient-info-section .form-control:focus {
+    border-color: #e75c3c;
+}
+
+.patient-info-section input[type="file"].form-control {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.patient-info-section .form-control::placeholder {
+    color: #999;
+}
+
+/* تحسين زر تحميل الصورة */
+.patient-info-section .form-control[type="file"]+label {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #e75c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.patient-info-section .form-control[type="file"]+label:hover {
+    background-color: #c24936;
+}
+
+/* تحسين الحدود عند تحديد الصورة */
+.patient-info-section .form-control[type="file"]+label.selected {
+    background-color: #54350a;
+}
+
+/* تحسين اختيار نوع البطاقة */
+.patient-info-section select.form-control {
+    padding-right: 35px;
+}
+
+/* تحسين الزر الخاص بإرسال البيانات */
+.patient-info-section button.btn-primary {
+    background-color: #e75c3c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+.patient-info-section button.btn-primary:hover {
+    background-color: #c24936;
+}
+
+/* تحسينات لنموذج بيانات المريض */
+.patient-info-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.patient-info-section h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.patient-info-section .form-group {
+    margin-bottom: 20px;
+}
+
+.patient-info-section label {
+    font-size: 18px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.patient-info-section .form-control {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.patient-info-section .form-control::placeholder {
+    color: #999;
+}
+
+.patient-info-section select.form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 35px;
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-512.png') no-repeat right center;
+    background-size: 20px;
+}
+
+.patient-info-section .form-control:focus {
+    border-color: #e75c3c;
+}
+
+.patient-info-section .form-control[type="file"]+label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e75c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.patient-info-section .form-control[type="file"]+label:hover {
+    background-color: #c24936;
+}
+
+.patient-info-section .form-control[type="file"]+label.selected {
+    background-color: #54350a;
+}
+
+.patient-info-section button.btn-primary {
+    background-color: #e75c3c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.patient-info-section button.btn-primary:hover {
+    background-color: #c24936;
+}
+
+/* تحسينات لملخص الحجز */
+.summary-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.summary-section h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.summary-item {
+    margin-bottom: 10px;
+}
+
+.summary-item strong {
+    display: inline-block;
+    width: 120px;
+    color: #555;
+}
+
+.summary-item span {
+    font-weight: bold;
+}
+
+/* تخصيص الزر */
+.btn-custom {
+    background-color: #e75c3c !important;
+    /* لون الخلفية */
+    color: #FFFFFF !important;
+    /* لون النص */
+    border-color: #e75c3c !important;
+    /* لون الحدود */
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    /* زاوية الحدود */
+    padding: 10px 20px;
+    /* المساحة الداخلية للزر */
+    font-size: 18px;
+    /* حجم الخط */
+}
+
+.btn-custom:hover {
+    background-color: #54350a !important;
+    /* لون الخلفية عند تمرير المؤشر */
+    border-color: #54350a !important;
+    /* لون الحدود عند تمرير المؤشر */
+}
+
+/* تخصيص الزر */
+.btn-custom-2 {
+    background-color: #7e6e6b !important;
+    /* لون الخلفية */
+    color: #FFFFFF !important;
+    /* لون النص */
+    border-color: #7e6e6b !important;
+    /* لون الحدود */
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    /* زاوية الحدود */
+    padding: 10px 20px;
+    /* المساحة الداخلية للزر */
+    font-size: 18px;
+    /* حجم الخط */
+}
+
+
+.expiry-date {
+    display: flex;
+    justify-content: flex-start;
+    /* تحديد المحتوى إلى اليمين */
+    align-items: center;
+    padding: 10px;
+    /* إضافة هوامش داخلية للكلاس */
+    border-radius: 5px;
+    direction: rtl;
+}
