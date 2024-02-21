@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Cairo:wght@200..1000&display=swap"
+        rel="stylesheet">
     <style>
         body {
             background-size: cover;
@@ -191,13 +192,11 @@
                             <div>
                                 <input class="form-check-input" type="checkbox" value="" id="remember_me"
                                     name="remember">
-                                <label class="form-check-label checkbox-inline" for="rememberMe">
+                                <label class="form-check-label checkbox-inline" for="remember_me">
                                     {{ __('Remember me') }}
                                 </label>
-
                             </div>
                             <br>
-
                             @if (App::getLocale() == 'ar')
                                 <a class="btn btn-outline-primary" href="{{ url('/lang', 'en') }}">
                                     Cahnge lang in English
@@ -207,7 +206,6 @@
                                     تغير اللغه الى العربية
                                 </a>
                             @endif
-
                         </div>
                         <button type="submit" class="btn btn-primary"> {{ __('Login') }} </button>
                     </form>

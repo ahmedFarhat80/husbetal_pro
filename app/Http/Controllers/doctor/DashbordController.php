@@ -9,6 +9,6 @@ class DashbordController extends Controller
 {
     public function TimeView()
     {
-
+        return response()->view('doctor.time');
     }
 }

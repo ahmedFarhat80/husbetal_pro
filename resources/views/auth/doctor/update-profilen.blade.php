@@ -193,7 +193,7 @@
                     <h4>
                         {{ __('It is just one step away to create your account in the system') }}
                     </h4>
-                    <form method="GET" action="{{ route('update.sendVerification') }}">
+                    <form method="POST" action="{{ route('update.sendVerification') }}">
                         @csrf
                         <div class="form-group">
                             <input type="email" class="form-control" name="email"
