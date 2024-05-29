@@ -1,0 +1,16 @@
+{
+    "Medical clinic reservation system": "Medical clinic reservation system",
+    "error_time": "This time is not available. Please select another hour or date",
+    "error_Family": "The Family Package expiry date fields are required",
+    "error_day": "Please enter a valid day (1-31)",
+    "error_month": "Please enter a valid month (1-12)",
+    "error_year": "Please enter a valid year (2023-2099)",
+    "not_available": "This time is not available. Please choose another date according to the following days: ",
+    "Successfully": "Your reservation has been created successfully - you will be redirected to the reservation information page after clicking OK.",
+    "Failed": "An unexpected error has occurred. You can contact the captain of Mashal Al-Hindi 51197963",
+    "not_possible": "It is not possible to book twice on the same day.",
+    "!!!": "You won`t be able to revert this!",
+    "بطاقة العائلة": "Family Card",
+    "موظف مدني":"Civil servant",
+    "هوية عسكرية":"Military ID"
+}
